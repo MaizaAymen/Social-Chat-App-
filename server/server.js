@@ -1,0 +1,13 @@
+import express from "express";
+import cors from "cors";
+import 'dotenv/config';
+import cookieParser from "cookie-parser";
+import connectDB from "./config/mongodb.js";
+connectDB();
+const app =express();
+const port =process.env.port || 4000;
+app.use(express.json());
+app.use(cookieParser());
+app.use(cors({credentials:true}));
+app.get(`/`,(req,res)=> res.send("slm winik cv hello "));
+app.listen(port, ()=>console.log(`server started on port : ${port}`));
