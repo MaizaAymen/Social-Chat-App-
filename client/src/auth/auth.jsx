@@ -83,9 +83,10 @@ const Auth = () => {
           <div className="form__social">
             <span className="form__social-text">Or login with</span>
 
-            <a href="#" className="form__social-icon"><i className="bx bxl-facebook"></i></a>
-            <a href="#" className="form__social-icon"><i className="bx bxl-google"></i></a>
-            <a href="#" className="form__social-icon"><i className="bx bxl-instagram"></i></a>
+            <a href="#" className="form__social-icon"><i className='bx bxl-facebook'></i></a>
+            <a href="#" className="form__social-icon"><i className='bx bxl-google'></i></a>
+         <a href="#" className="form__social-icon"><i className='bx bxl-instagram'></i></a>
+
           </div>
         </form>
       </div>
