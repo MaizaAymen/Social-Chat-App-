@@ -55,7 +55,7 @@ const Auth = () => {
 
                 <div class="form__div-input">
                     <label for="" class="form__label">Username</label>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" />
                 </div>
             </div>
 
