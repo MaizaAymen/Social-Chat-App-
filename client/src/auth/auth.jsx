@@ -82,7 +82,6 @@ const Auth = () => {
 
           <div className="form__social">
             <span className="form__social-text">Or login with</span>
-
             <button type="button" className="form__social-icon"><i className='bx bxl-facebook'></i></button>
             <button type="button" className="form__social-icon"><i className='bx bxl-google'></i></button>
             <button type="button" className="form__social-icon"><i className='bx bxl-instagram'></i></button>

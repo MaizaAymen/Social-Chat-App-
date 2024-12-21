@@ -1,9 +1,9 @@
 import './App.css';
-import Auth from './auth/auth';  // Make sure to import with the correct case
+import Auth from './auth/auth';  // Correct capitalization
 
 function App() {
   return (
-    <Auth />  // Use the component with capital letter 'A'
+    <Auth />  // Use Auth with a capital letter
   );
 }
 
