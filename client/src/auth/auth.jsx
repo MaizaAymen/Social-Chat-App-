@@ -32,12 +32,12 @@ const Auth=()=>{
 
                     <div class="form__div-input">
                         <label for="" class="form__label">Password</label>
-                        <input type="password" class="form__input">
+                        <input type="password" class="form__input"/>
                     </div>
                 </div>
                 <a href="#" class="form__forgot">Forgot Password?</a>
 
-                <input type="submit" class="form__button" value="Login">
+                <input type="submit" class="form__button" value="Login"/>
 
                 <div class="form__social">
                     <span class="form__social-text">Our login with</span>
