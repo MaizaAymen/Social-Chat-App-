@@ -85,8 +85,6 @@ const Auth = () => {
             <button type="button" className="form__social-icon"><i className='bx bxl-facebook'></i></button>
             <button type="button" className="form__social-icon"><i className='bx bxl-google'></i></button>
             <button type="button" className="form__social-icon"><i className='bx bxl-instagram'></i></button>
-
-
           </div>
         </form>
       </div>
