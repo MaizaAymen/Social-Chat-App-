@@ -85,7 +85,7 @@ const Auth = () => {
 
             <a href="#" className="form__social-icon"><i className='bx bxl-facebook'></i></a>
             <a href="#" className="form__social-icon"><i className='bx bxl-google'></i></a>
-         <a href="#" className="form__social-icon"><i className='bx bxl-instagram'></i></a>
+            <a href="#" className="form__social-icon"><i className='bx bxl-instagram'></i></a>
 
           </div>
         </form>
