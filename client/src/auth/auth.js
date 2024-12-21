@@ -1,4 +1,4 @@
-
+import React from "react"
 const inputs = document.querySelectorAll(".form__input")
 
 
