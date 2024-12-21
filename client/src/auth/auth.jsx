@@ -76,7 +76,7 @@ const Auth = () => {
             </div>
           </div>
 
-          <a href="#" className="form__forgot">Forgot Password?</a>
+          <button type="button" className="form__forgot">Forgot Password?</button>
 
           <input type="submit" className="form__button" value="Login" />
 
