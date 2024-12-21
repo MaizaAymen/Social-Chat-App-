@@ -1,6 +1,6 @@
 import React from "react";
 import "./auth.css";
-
+import "./auth.js";
 
 const Auth=()=>{
     return(
