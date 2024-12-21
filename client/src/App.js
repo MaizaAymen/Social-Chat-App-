@@ -1,9 +1,11 @@
-import './App.css';
-import Auth from './auth/auth';  // Correct capitalization
 
+import './App.css';
+import Auth from './auth/auth';
 function App() {
   return (
-    <Auth />  // Use Auth with a capital letter
+    <div className="App">
+      <Auth/>
+    </div>
   );
 }
 
