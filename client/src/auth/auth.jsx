@@ -9,7 +9,7 @@ const Auth=()=>{
         <div class="shape2"></div>
 
         <div class="form">
-            <img src="assets/img/authentication.svg" alt="" class="form__img"/>
+            <img src="assets\authentication.svg" alt="" class="form__img"/>
 
             <form action="" class="form__content">
                 <h1 class="form__title">Welcome</h1>
