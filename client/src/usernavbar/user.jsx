@@ -47,8 +47,9 @@ const User = () => {
             <li onClick={() => showSection("pendingRequests")}>
               Pending Requests
             </li>
-            <li onClick={() => alert("Redirecting to Messenger...")}>
-              Messenger
+            <li>
+                <a href="/Chat">
+              Messenger</a>
             </li>
             <li onClick={() => alert("Logged out!")}>LogOut</li>
           </ul>
