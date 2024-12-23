@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import './Chat.css';
+import User from "../usernavbar/user";
 
 const Chat = () => {
+    <User/>
   const messagesRef = useRef(null);
   const inputRef = useRef(null);
   const ws = useRef(null);
