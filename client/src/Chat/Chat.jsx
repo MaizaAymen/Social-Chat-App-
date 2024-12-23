@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import './Chat.css';
-import User from "../usernavbar/user";
 
 const Chat = () => {
     
