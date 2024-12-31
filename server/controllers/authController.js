@@ -301,8 +301,6 @@ try {
     user.resetOtp="";
     user.resetOtpExpireAt=0;
     await user.save();
-    re
-    
 } catch (error) {
     return res.json({success:false,message:error.message})
     
