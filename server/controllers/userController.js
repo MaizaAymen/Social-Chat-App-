@@ -14,6 +14,7 @@ export const getUserData=async(req,res)=>{
             userData:{
               name:user.name,
               isAuthenticated:user.isAuthenticated
+              
             }})
 
         
