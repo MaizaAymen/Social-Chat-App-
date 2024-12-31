@@ -37,5 +37,7 @@ A social chat platform where users can join or create different rooms based on i
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/social-chat-app.git
+
+git clone [https://github.com/your-username/social-chat-app.git](https://github.com/MaizaAymen/Social-Chat-App-.git)
 cd social-chat-app
+
