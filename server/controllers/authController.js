@@ -300,6 +300,7 @@ try {
     user.resetOtp="";
     user.resetOtpExpireAt=0;
     await user.save();
+    return res.json({success:true,message:"password reset successfully"})
 } catch (error) {
     return res.json({success:false,message:error.message})
     
