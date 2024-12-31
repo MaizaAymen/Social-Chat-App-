@@ -286,7 +286,6 @@ try {
     const user=await userModel.findOne({email});
     if (!user){
      return res.json({success:false,message:"user not found"});
-
     }
     if (user.resetOtp=="" || user.resetOtp!==otp) {
         return res.json({success:false,message:"invalid otp"})
