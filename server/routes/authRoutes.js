@@ -12,5 +12,4 @@ authRouter.post('/isAuthenticated',userAuth,isAuthenticated);
 authRouter.post('/sendResetOtp',sendResetOtp);
 authRouter.post('/resetPassword',resetPassword);
 
-
 export default authRouter; // N'oubliez pas d'exporter le routeur
