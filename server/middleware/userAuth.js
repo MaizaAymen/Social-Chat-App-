@@ -20,6 +20,10 @@ const userAuth=async (req,res, next)=>{
     }
 }
 export default userAuth;
+/*******************If you're using MongoDB, it automatically generates a unique _id for every document. 
+ * You can use this as your userId.
+
+ *******************/
 
 /*4. Authentication of User
 We have to authenticate the user whether it is login before or not. 
