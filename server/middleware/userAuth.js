@@ -27,3 +27,29 @@ The jwt token that we generated before store as a form of cookies in the browser
 Now if he again go to some other page or again go to that route. 
 That tokens help to identify that this user is logged In. 
 So for that we add a middleware for that authentication of the token in our file name auth.js*/
+
+
+
+
+
+
+
+/*Now we also add one more function here for authorising admin login to the website. 
+Admin login is very important for the website for dealing with multiple things like changing products, adding , deleting and updating product informations.
+Only specific user with admin access can do that. 
+That’s why we added a role property in our schema.
+exports.authorizeRoles = (...roles) => {
+    console.log(roles);
+    return (req, res, next) => {
+        if(!roles.includes(req.user.role)){
+            new ErrorHandler(
+                `Role: ${req.user.role} is not allowed to access this resource`,
+                403
+            )
+        }
+        next();
+    }
+}
+
+
+*/
