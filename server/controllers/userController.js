@@ -1,5 +1,5 @@
 import userModel from "../models/userModel.js";
-import { isAuthenticated } from "./authController.js";
+
 
 
 export const getUserData=async(req,res)=>{
@@ -13,7 +13,7 @@ export const getUserData=async(req,res)=>{
         res.json({success:true,
             userData:{
               name:user.name,
-              isAuthenticated:user.isAuthenticated
+              isAcconuntVerified:user.isAcconuntVerified
               
             }})
 
