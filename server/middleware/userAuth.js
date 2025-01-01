@@ -32,8 +32,6 @@ So for that we add a middleware for that authentication of the token in our file
 
 
 
-
-
 /*Now we also add one more function here for authorising admin login to the website. 
 Admin login is very important for the website for dealing with multiple things like changing products, adding , deleting and updating product informations.
 Only specific user with admin access can do that. 
