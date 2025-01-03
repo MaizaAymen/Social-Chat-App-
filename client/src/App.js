@@ -21,7 +21,7 @@ function App() {
           <Route path="/Home" element={<Home/>} />
           <Route path="/resetPassword" element={<resetPassword/>} />
           <Route path="/EmailVerify" element={<EmailVerify/>} />
-          <Route path="/EmailVerify" element={<EmailVerify/>} />
+          <Route path="/navbar" element={<navbar/>} />
         </Routes>
       </div>
     </BrowserRouter> 
