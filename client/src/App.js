@@ -3,6 +3,8 @@ import Auth from './auth/auth';
 import Chat from './Chat/Chat';
 import User from './usernavbar/user';
 import login from './pages/login';
+import Home from './pages/Home';
+import resetPassword from './pages/resetPassword';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
