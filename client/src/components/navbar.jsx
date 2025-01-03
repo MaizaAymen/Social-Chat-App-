@@ -1,7 +1,7 @@
 import React from 'react'
 import './navbar.css'
 import { useNavigate } from 'react-router-dom'
-const navbar = () => {
+const Navbar = () => {
     const navigate = useNavigate();
   return (
     <div className='w-full'>
@@ -11,4 +11,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar
