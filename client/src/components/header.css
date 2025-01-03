@@ -1,0 +1,23 @@
+.header-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .header-image {
+    width: 9rem; /* Equivalent to 'w-36' in Tailwind */
+    height: 9rem; /* Equivalent to 'h-36' in Tailwind */
+    border-radius: 50%; /* Equivalent to 'rounded-full' */
+    margin-bottom: 1.5rem; /* Equivalent to 'mb-6' */
+  }
+  
+  .header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .wave-image {
+    width: 2rem; /* Equivalent to 'w-8' in Tailwind */
+    aspect-ratio: 1 / 1; /* Equivalent to 'aspect-square' */
+  }
+  

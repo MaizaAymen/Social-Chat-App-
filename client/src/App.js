@@ -8,6 +8,7 @@ import resetPassword from './pages/resetPassword';
 import EmailVerify from './pages/EmailVerify';
 import Navbar from './components/navbar.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './components/header.jsx';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/resetPassword" element={<resetPassword/>} />
           <Route path="/EmailVerify" element={<EmailVerify/>} />
           <Route path="/navbar" element={<Navbar/>} />
+          <Route path="/header" element={<Header/>} />
         </Routes>
       </div>
     </BrowserRouter> 
