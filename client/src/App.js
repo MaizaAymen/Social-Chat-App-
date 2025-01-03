@@ -12,6 +12,8 @@ function App() {
           <Route path="/" element={<User/>} />
           <Route path="/chat" element={<Chat/>} />
           <Route path="/Auth" element={<Auth/>} />
+          <Route path="/" element={</>} />
+          
         </Routes>
       </div>
     </BrowserRouter> 
