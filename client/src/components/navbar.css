@@ -1,0 +1,71 @@
+/* Conteneur principal de la navbar */
+.w-full {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    top: 0;
+    z-index: 10; /* Assure que la navbar reste au-dessus du contenu */
+  }
+  
+  .sm\:p-6 {
+    padding: 24px; /* Ajuste les espaces pour les écrans plus grands */
+  }
+  
+  .sm\:px-24 {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+  
+  /* Logo */
+  .w-28 {
+    width: 7rem; /* Taille par défaut pour les petits écrans */
+  }
+  
+  .sm\:w-32 {
+    width: 8rem; /* Taille du logo pour les écrans plus grands */
+  }
+  
+  /* Bouton */
+  button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #9ca3af; /* Gris clair */
+    border-radius: 9999px; /* Bord arrondi (effet de cercle) */
+    padding: 8px 24px; /* Espace intérieur */
+    color: #4b5563; /* Texte gris foncé */
+    background-color: transparent; /* Fond transparent */
+    font-size: 1rem; /* Taille du texte */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animation pour le hover */
+  }
+  
+  /* Hover sur le bouton */
+  button:hover {
+    background-color: #f3f4f6; /* Gris clair */
+  }
+  
+  /* Icône dans le bouton */
+  button img {
+    height: 1rem; /* Taille de l'icône */
+  }
+  
+  /* Media query pour mobile */
+  @media (max-width: 640px) {
+    .w-full {
+      padding: 16px; /* Réduction des marges pour les petits écrans */
+    }
+  
+    .w-28 {
+      width: 6rem; /* Réduction de la taille du logo */
+    }
+  
+    button {
+      padding: 8px 16px; /* Bouton plus compact */
+      font-size: 0.875rem; /* Taille du texte réduite */
+    }
+  }
+  
