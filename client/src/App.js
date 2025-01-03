@@ -5,6 +5,8 @@ import User from './usernavbar/user';
 import login from './pages/login';
 import Home from './pages/Home';
 import resetPassword from './pages/resetPassword';
+import EmailVerify from './pages/EmailVerify';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
