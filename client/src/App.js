@@ -19,8 +19,8 @@ function App() {
           <Route path="/Auth" element={<Auth/>} />
           <Route path="/login" element={<login/>} />
           <Route path="/login" element={<Home/>} />
-          <Route path="/login" element={<login/>} />
-          <Route path="/login" element={<login/>} />
+          <Route path="/login" element={<resetPassword/>} />
+          <Route path="/login" element={<EmailVerify/>} />
         </Routes>
       </div>
     </BrowserRouter> 
