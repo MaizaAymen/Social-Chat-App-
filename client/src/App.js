@@ -18,7 +18,9 @@ function App() {
           <Route path="/chat" element={<Chat/>} />
           <Route path="/Auth" element={<Auth/>} />
           <Route path="/login" element={<login/>} />
-          
+          <Route path="/login" element={<Home/>} />
+          <Route path="/login" element={<login/>} />
+          <Route path="/login" element={<login/>} />
         </Routes>
       </div>
     </BrowserRouter> 
