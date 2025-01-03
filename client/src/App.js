@@ -18,9 +18,9 @@ function App() {
           <Route path="/chat" element={<Chat/>} />
           <Route path="/Auth" element={<Auth/>} />
           <Route path="/login" element={<login/>} />
-          <Route path="/login" element={<Home/>} />
-          <Route path="/login" element={<resetPassword/>} />
-          <Route path="/login" element={<EmailVerify/>} />
+          <Route path="/Home" element={<Home/>} />
+          <Route path="/resetPassword" element={<resetPassword/>} />
+          <Route path="/EmailVerify" element={<EmailVerify/>} />
         </Routes>
       </div>
     </BrowserRouter> 
