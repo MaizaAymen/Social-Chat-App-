@@ -2,7 +2,7 @@ import React from 'react'
 import './navbar.css'
 import { useNavigate } from 'react-router-dom'
 const navbar = () => {
-    const navigate=useNavigate()
+    const navigate = useNavigate();
   return (
     <div className='w-full'>
       <img src="assets/favicon.svg" />
