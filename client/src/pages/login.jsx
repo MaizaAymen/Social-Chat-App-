@@ -22,16 +22,23 @@ const [password,setpassword]=useState('')
         { state==='sign up' &&(
         <div className="input-container">
           <img src="assets/person_icon.svg" alt="Person Icon" />
-          <input type="text" placeholder="Enter your username" />
+          <input type="text" placeholder="Enter your username" 
+          onChange={(e)=> setname(e.target.value)}
+          value={name}
+          />
         </div>
         ) }
         <div className="input-container">
           <img src="assets/lock_icon.svg" alt="Lock Icon" />
-          <input type="password" placeholder="Enter your password" />
+          <input type="password" placeholder="Enter your password" 
+          onChange={(e)=> setpassword(e.target.value)}
+          value={password}/>
         </div>
         <div className="input-container">
           <img src="assets\mail_icon.svg" alt="Lock Icon" />
-          <input type="email" placeholder="Enter your Email" />
+          <input type="email" placeholder="Enter your Email" 
+          onChange={(e)=> setemail(e.target.value)}
+          value={email}/>
         </div>
         <p className=''>forget password</p>
         <button type="submit" className="submit-button">
