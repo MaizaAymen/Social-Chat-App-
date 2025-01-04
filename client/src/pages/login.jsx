@@ -32,7 +32,7 @@ const [state,setState]=useState('sign up')
           {state}
         </button>
       </form>
-      
+      <p>Already have an account ?</p>
     </div>
   </div>
   )
