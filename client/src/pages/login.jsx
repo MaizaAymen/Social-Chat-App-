@@ -42,7 +42,7 @@ const [password,setpassword]=useState('')
           onChange={(e)=> setemail(e.target.value)}
           value={email}/>
         </div>
-        <p className=''>forget password</p>
+        <p className='' onClick={()=>navigate('/Resetpassword')}>forget password</p>
         <button type="submit" className="submit-button">
           {state}
         </button>
