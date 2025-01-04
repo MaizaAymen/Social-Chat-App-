@@ -29,9 +29,10 @@ const [state,setState]=useState('sign up')
         </div>
         <p className=''>forget password</p>
         <button type="submit" className="submit-button">
-          {state === 'sign up' ? 'Sign Up' : 'Login'}
+          {state}
         </button>
       </form>
+      
     </div>
   </div>
   )
