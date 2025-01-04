@@ -1,7 +1,7 @@
 import React, { useState, createContext } from "react";
 
 // Création du contexte
-export const AppContext = createContext();
+export const AppContent = createContext();
 
 export const AppContextProvider = (props) => {
     const backendUrl = import.meta.env.VITE_BACKEND_URL; // Assurez-vous que cette variable est définie
@@ -17,8 +17,8 @@ export const AppContextProvider = (props) => {
     };
 
     return (
-        <AppContext.Provider value={value}>
+        <AppContent.Provider value={value}>
             {props.children}
-        </AppContext.Provider>
+        </AppContent.Provider>
     );
 };
