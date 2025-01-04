@@ -12,7 +12,8 @@ const [password,setpassword]=useState('')
 const onSubitHundler =async(e)=>{
   try {
     e.preventDefault();
-    if (state==='sign up') {
+    if (state==='sign up'){
+      await axios.post(backendUrl+'api/auth/register',{name,email,password})
       
     } else {
       
