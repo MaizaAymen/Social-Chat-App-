@@ -9,6 +9,18 @@ const [state,setState]=useState('sign up')
 const [name,setname]=useState('')
 const [email,setemail]=useState('')
 const [password,setpassword]=useState('')
+const onSubitHundler =async(e)=>{
+  try {
+    e.preventDefault();
+    if (state==='sign up') {
+      
+    } else {
+      
+    }
+  } catch (error) {
+    
+  }
+}
  
   return (
     <div className="login-container">
