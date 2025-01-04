@@ -3,6 +3,10 @@ import './login.css'
 
 const Login = () => {
 const [state,setState]=useState('sign up') 
+const [name,setname]=useState('')
+const [email,setemail]=useState('')
+const [password,setpassword]=useState('')
+
   return (
     <div className="login-container">
     <img
@@ -37,7 +41,7 @@ const [state,setState]=useState('sign up')
       {state ==='sign up' ? (<p>Already have an account ?{' '}<span onClick={()=>setState('login')}> login here</span></p>
       )
       :
-      (<p>Don't have an account ?{' '}<span onClick={()=>setState('sign up')}> sign here</span></p>
+      (<p>Don't have an account ?{' '}<span onClick={()=>setState('sign up')}>sign here</span></p>
         )}
       
       
