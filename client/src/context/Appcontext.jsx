@@ -6,6 +6,8 @@ export const AppContextProvider=(props)=>{
     const [islogin,setislogin]=useState(false)
     const [userData,setuserData]=useState(false)
     const value={
+        backendUrl,
+        islogin,
   
     }
     return (
