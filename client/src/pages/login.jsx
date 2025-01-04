@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { AppContent } from '../context/Appcontext'
 const Login = () => {
   const navigate =useNavigate()
-  const {backendUrl}=useContext(AppContent)
+  const {backendUrl , setislogin}=useContext(AppContent)
 const [state,setState]=useState('sign up') 
 const [name,setname]=useState('')
 const [email,setemail]=useState('')
