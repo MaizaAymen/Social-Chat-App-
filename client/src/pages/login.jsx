@@ -24,6 +24,17 @@ const onSubitHundler =async(e)=>{
         toast.error(data.message)
       }
     } else {
+      if (state==='login'){
+        const {data}= await axios.post(backendUrl+'api/auth/register',{name,email,password})
+         if (data.success) {
+           setislogin(true)
+           navigate('/Home')
+         }else{
+           toast.error(data.message)
+         }
+       }
+      
+      
       
     }
   } catch (error) {
