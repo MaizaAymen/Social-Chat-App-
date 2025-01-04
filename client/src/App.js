@@ -9,7 +9,7 @@ import EmailVerify from './pages/EmailVerify';
 import Navbar from './components/navbar.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/header.jsx';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 
 function App() {
   return (
