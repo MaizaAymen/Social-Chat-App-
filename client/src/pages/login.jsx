@@ -11,10 +11,11 @@ const [password,setpassword]=useState('')
   return (
     <div className="login-container">
     <img
+    onClick={()=>navigate('/Home')}
       src="assets/logo.svg"
       alt="Logo"
       className="login-logo"
-      onClick={() => console.log('Logo Clicked')} // Add functionality if needed
+      // Add functionality if needed
     />
     <div className="login-content">
       <h2>{state === 'sign up' ? 'Create Account' : 'Login to Your Account'}</h2>
