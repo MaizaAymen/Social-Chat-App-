@@ -34,9 +34,11 @@ const [state,setState]=useState('sign up')
           {state}
         </button>
       </form>
-      {state ==='sign up' ? (<p>Already have an account ?{' '}</p>
-      <span> login here</span>):(<p>Don't have an account ?{' '}</p>
-        <span> sign here</span>)}
+      {state ==='sign up' ? (<p>Already have an account ?{' '}<span> login here</span></p>
+      )
+      :
+      (<p>Don't have an account ?{' '}<span> sign here</span></p>
+        )}
       
       
     </div>
