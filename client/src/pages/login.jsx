@@ -15,10 +15,12 @@ const [state,setState]=useState('sign up')
       <h2>{state === 'sign up' ? 'Create Account' : 'Login to Your Account'}</h2>
       <p>{state === 'sign up' ? 'Create your account' : 'Login to your account!'}</p>
       <form className="login-form">
+        { state==='sign up' &&(
         <div className="input-container">
           <img src="assets/person_icon.svg" alt="Person Icon" />
           <input type="text" placeholder="Enter your username" />
         </div>
+        ) }
         <div className="input-container">
           <img src="assets/lock_icon.svg" alt="Lock Icon" />
           <input type="password" placeholder="Enter your password" />
