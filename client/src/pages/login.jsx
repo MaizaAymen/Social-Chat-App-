@@ -34,6 +34,8 @@ const [state,setState]=useState('sign up')
       </form>
       <p>Already have an account ?{' '}</p>
       <span> login here</span>
+      <p>Don't have an account ?{' '}</p>
+      <span> sign here</span>
     </div>
   </div>
   )

@@ -67,4 +67,31 @@
     padding: 0.5rem;
     font-size: 1rem;
   }
+  .text-gray-400 {
+    color: #9CA3AF; /* Gris clair */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-xs {
+    font-size: 0.75rem; /* Taille extra-small */
+  }
+  
+  .mt-4 {
+    margin-top: 1rem; /* Marge supérieure de 4 */
+  }
+  
+  .text-blue-400 {
+    color: #60A5FA; /* Bleu clair */
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
   
