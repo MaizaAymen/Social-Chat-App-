@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className='w-full'>
       <img src="assets/favicon.svg" />
-      <button onClick={()=>navigate('/login')}> login <img src="assets/arrow_icon.svg" alt="" /></button>
+      <button onClick={()=>navigate('/Login')}> login <img src="assets/arrow_icon.svg" alt="" /></button>
     </div>
   )
 }
