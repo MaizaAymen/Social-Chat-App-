@@ -25,7 +25,7 @@ const onSubitHundler =async(e)=>{
       }
     } else {
       if (state==='login'){
-        const {data}= await axios.post(backendUrl+'api/auth/register',{name,email,password})
+        const {data}= await axios.post(backendUrl+'api/auth/login',{email,password})
          if (data.success) {
            setislogin(true)
            navigate('/Home')
@@ -54,7 +54,7 @@ const onSubitHundler =async(e)=>{
     <div className="login-content">
       <h2>{state === 'sign up' ? 'Create Account' : 'Login to Your Account'}</h2>
       <p>{state === 'sign up' ? 'Create your account' : 'Login to your account!'}</p>
-      <form className="login-form">
+      <form className="login-form" onSubmit={onSubitHundler}>
         { state==='sign up' &&(
         <div className="input-container">
           <img src="assets/person_icon.svg" alt="Person Icon" />
