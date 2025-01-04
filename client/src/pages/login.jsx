@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import './login.css'
-
+import { useNavigate } from 'react-router-dom'
 const Login = () => {
+  const navigate =useNavigate()
 const [state,setState]=useState('sign up') 
 const [name,setname]=useState('')
 const [email,setemail]=useState('')
 const [password,setpassword]=useState('')
-
+ 
   return (
     <div className="login-container">
     <img
