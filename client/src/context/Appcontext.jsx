@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { React,useState } from "react";
 
 export const AppContent = React.createContext();
 export const AppContextProvider=(props)=>{
@@ -9,7 +9,6 @@ export const AppContextProvider=(props)=>{
         backendUrl,
         islogin,setislogin,
         userData,setuserData
-  
     }
     return (
       
