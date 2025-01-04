@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import './login.css'
 import { useNavigate } from 'react-router-dom'
 import { AppContent } from '../context/Appcontext'
+import axios from 'axios'
 const Login = () => {
   const navigate =useNavigate()
   const {backendUrl , setislogin}=useContext(AppContent)
@@ -12,9 +13,15 @@ const [password,setpassword]=useState('')
 const onSubitHundler =async(e)=>{
   try {
     e.preventDefault();
+    axios.defaults.withCredentials=true;
     if (state==='sign up'){
-      await axios.post(backendUrl+'api/auth/register',{name,email,password})
-      
+     const {data}= await axios.post(backendUrl+'api/auth/register',{name,email,password})
+      if (data.success) {
+        setislogin(true)
+        navigate('/Home')
+      }else{
+        alert(data.message)
+      }
     } else {
       
     }
