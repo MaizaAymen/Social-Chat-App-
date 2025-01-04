@@ -4,6 +4,7 @@ const EmailVerify = () => {
   return (
     <div>
       
+      
     </div>
   )
 }
