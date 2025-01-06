@@ -21,6 +21,9 @@ export const AppContextProvider = (props) => {
             toast.error(error.message)
         }
     }
+    useEffect(()=>{
+        getAuthState();
+    },[])
     
     const getUserData =async ()=>{
     try {
