@@ -8,7 +8,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify';
 const Login = () => {
   const navigate =useNavigate()
-  const {backendUrl ,setIsLogin}= useContext(AppContent);
+  const {backendUrl ,setIsLogin , getUserData}= useContext(AppContent);
 const [state,setState]=useState('sign up') 
 const [name,setname]=useState('')
 const [email,setemail]=useState('')
@@ -18,18 +18,20 @@ const onSubitHundler =async(e)=>{
     e.preventDefault();
     axios.defaults.withCredentials=true;
     if (state==='sign up'){
-     const {data}= await axios.post(backendUrl+'api/auth/register',{name,email,password})
+     const {data}= await axios.post('http://localhost:4000/api/auth/register',{name,email,password})
       if (data.success) {
-        setIsLogin(true)
+        setIsLogin(true)  
+        getUserData()
         navigate('/Home')
       }else{
         toast.error(data.message)
       }
     } else {
       if (state==='login'){
-        const {data}= await axios.post(backendUrl+'api/auth/login',{email,password})
+        const {data}= await axios.post('http://localhost:4000/api/auth/login',{email,password})
          if (data.success) {
           setIsLogin(true)
+          getUserData()
            navigate('/Home')
          }else{
            toast.error(data.message)
