@@ -1,6 +1,6 @@
 import React, { useState, createContext } from "react";
 import { toast } from "react-toastify";
-
+import axios from 'axios';
 // Création du contexte
 export const AppContent = createContext();
 
@@ -10,7 +10,7 @@ export const AppContextProvider = (props) => {
     const [userData, setUserData] = useState(false); // `null` est plus courant que `false` pour les données utilisateur
    const getUserData =async ()=>{
     try {
-        const {data} =await axios.get('http://localhost:4000/api/user/data')
+        const {data} =await axios.get('http://localhost:4000/api/user/data')    
         data.success ? setUserData(data.userData):toast.error(data.message)
     } catch (error) {
         toast.error(error.message)
@@ -25,6 +25,7 @@ export const AppContextProvider = (props) => {
         setIsLogin,
         userData,
         setUserData,
+        getUserData
     };
 
     return (

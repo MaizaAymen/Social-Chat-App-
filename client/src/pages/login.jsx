@@ -19,7 +19,7 @@ const onSubitHundler =async(e)=>{
     axios.defaults.withCredentials=true;
     if (state==='sign up'){
      const {data}= await axios.post('http://localhost:4000/api/auth/register',{name,email,password})
-      if (data.success) {
+      if (data.success){
         setIsLogin(true)  
         getUserData()
         navigate('/Home')
@@ -32,7 +32,7 @@ const onSubitHundler =async(e)=>{
          if (data.success) {
           setIsLogin(true)
           getUserData()
-           navigate('/Home')
+          navigate('/Home')
          }else{
            toast.error(data.message)
          }
