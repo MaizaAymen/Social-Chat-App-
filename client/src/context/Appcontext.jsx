@@ -11,7 +11,11 @@ export const AppContextProvider = (props) => {
     
     const getAuthState=async ()=>{
         try {
-            const {data}=await axios.get('http://localhost:4000/api/is-auth/')
+            const {data}=await axios.get('http://localhost:4000/api/isAuthenticated')
+            if(data.success){
+                setIsLogin(true)
+                getUserData()
+            }
             
         } catch (error) {
             toast.error(error.message)
