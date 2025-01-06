@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className='w-full'>
       <img src="assets/favicon.svg" />
       {userData ? 
-      <div>
+      <div class="custom-div group">
         {userData.name[0].toUpperCase()}
       </div>
     :

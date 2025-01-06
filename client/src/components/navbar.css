@@ -68,4 +68,19 @@
       font-size: 0.875rem; /* Taille du texte réduite */
     }
   }
+  .custom-div {
+    width: 2rem; /* w-8 */
+    height: 2rem; /* h-8 */
+    display: flex; /* flex */
+    justify-content: center; /* justify-center */
+    align-items: center; /* items-center */
+    border-radius: 9999px; /* rounded-full */
+    background-color: black; /* bg-black */
+    color: white; /* text-white */
+    position: relative; /* relative */
+  }
+  
+  .group {
+    /* If you need to use the group utility, you could define styles here that apply when items inside it are interacted with */
+  }
   
