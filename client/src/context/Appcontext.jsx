@@ -8,7 +8,17 @@ export const AppContextProvider = (props) => {
     const backendUrl = process.env.VITE_BACKEND_URL; // Assurez-vous que cette variable est définie
     const [isLogin, setIsLogin] = useState(false); // Correction de la casse pour les conventions de nommage
     const [userData, setUserData] = useState(false); // `null` est plus courant que `false` pour les données utilisateur
-   const getUserData =async ()=>{
+    
+    const getAuthState=async ()=>{
+        try {
+            const {data}=await axios.get('http://localhost:4000/api/is-auth/')
+            
+        } catch (error) {
+            toast.error(error.message)
+        }
+    }
+    
+    const getUserData =async ()=>{
     try {
         const {data} =await axios.get('http://localhost:4000/api/user/data')    
         data.success ? setUserData(data.userData):toast.error(data.message)
