@@ -14,7 +14,7 @@ const Navbar = () => {
         <div class="custom-tooltip">
         <ul class="custom-list">
           <li>verify email</li>
-          <li>logout</li>
+          <li class="last">logout</li>
         </ul>
         </div>
       </div>
