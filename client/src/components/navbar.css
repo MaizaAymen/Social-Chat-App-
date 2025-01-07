@@ -109,4 +109,28 @@
   .group:hover .custom-tooltip {
     display: block; /* Show on hover */
   }
+  .custom-list {
+    list-style-type: none;  /* list-none */
+    margin: 0;              /* m-0 */
+    padding: 0.5rem;        /* p-2 */
+    background-color: #f7fafc;  /* bg-gray-100 */
+    font-size: 0.875rem;    /* text-sm */
+  }
+  
+  .custom-list li {
+    padding-top: 0.25rem;   /* py-1 */
+    padding-bottom: 0.25rem; /* py-1 */
+    padding-left: 0.5rem;   /* px-2 */
+    padding-right: 0.5rem;  /* px-2 */
+    cursor: pointer;        /* cursor-pointer */
+    transition: background-color 0.2s; /* Smooth hover effect */
+  }
+  
+  .custom-list li:hover {
+    background-color: #edf2f7; /* hover:bg-gray-200 */
+  }
+  
+  .custom-list li.last {
+    padding-right: 2.5rem;   /* pr-10 for specific item */
+  }
   
