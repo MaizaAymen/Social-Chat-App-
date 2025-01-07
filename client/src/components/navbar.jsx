@@ -2,10 +2,20 @@ import React, { useContext } from 'react'
 import './navbar.css'
 import { useNavigate } from 'react-router-dom'
 import { AppContent } from '../context/Appcontext';
+import axios from 'axios';
 const Navbar = () => {
     const navigate = useNavigate();
     const {userData ,backendUrl ,setIsLogin ,setUserData}=useContext(AppContent)
-  return (
+    const logout=()=>{
+      try {
+        axios.defaults.withCredentials=true;
+        const {data}=await axios.get
+      } catch (error) {
+        
+      }
+    }
+ 
+    return (
     <div className='w-full'>
       <img src="assets/favicon.svg" />
       {userData ? 
