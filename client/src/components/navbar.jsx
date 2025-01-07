@@ -10,7 +10,7 @@ const Navbar = () => {
     const logout= async()=>{
       try {
         axios.defaults.withCredentials=true;
-        const {data}=await axios.get('http://localhost:4000/api/auth/logout')
+        const {data}=await axios.post('http://localhost:4000/api/auth/logout')
           data.success && setIsLogin(false)
           data.success && setUserData(false)
           navigate('/Home');
