@@ -68,7 +68,7 @@
       font-size: 0.875rem; /* Taille du texte réduite */
     }
   }
- .custom-div {
+  .custom-div {
   width: 2rem; /* w-8 */
   height: 2rem; /* h-8 */
   display: flex; /* flex */
@@ -78,7 +78,7 @@
   background-color: black; /* bg-black */
   color: white; /* text-white */
   position: relative; /* relative */
-  padding-right: 1rem; /* Add this line for more space inside the div (adjust value as needed) */
+  margin-right: 1rem; /* Add this line for more space on the right (adjust value as needed) */
 }
   .custom-div {
     width: 2rem; /* w-8 */
