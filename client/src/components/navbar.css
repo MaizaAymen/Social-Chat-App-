@@ -83,4 +83,18 @@
   .group {
     /* If you need to use the group utility, you could define styles here that apply when items inside it are interacted with */
   }
+  .custom-tooltip {
+    position: absolute; /* absolute */
+    display: none; /* hidden */
+    top: 0; /* top-0 */
+    right: 0; /* right-0 */
+    z-index: 10; /* z-10 */
+    color: black; /* text-black */
+    border-radius: 0.25rem; /* rounded */
+    padding-top: 2.5rem; /* pt-10 */
+  }
+  
+  .group:hover .custom-tooltip {
+    display: block; /* Show on hover */
+  }
   
