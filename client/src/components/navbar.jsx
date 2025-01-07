@@ -11,8 +11,8 @@ const Navbar = () => {
       {userData ? 
       <div class="custom-div group">
         {userData.name[0].toUpperCase()}
-        <div>
-          
+        <div class="custom-tooltip">
+
         </div>
       </div>
     :
