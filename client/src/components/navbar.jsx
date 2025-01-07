@@ -11,6 +11,9 @@ const Navbar = () => {
       {userData ? 
       <div class="custom-div group">
         {userData.name[0].toUpperCase()}
+        <div>
+          
+        </div>
       </div>
     :
     <button onClick={()=>navigate('/Login')}> login <img src="assets/arrow_icon.svg" alt="" /></button>
