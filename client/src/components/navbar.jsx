@@ -13,7 +13,8 @@ const Navbar = () => {
         {userData.name[0].toUpperCase()}
         <div class="custom-tooltip">
         <ul class="custom-list">
-          <li>verify email</li>
+          {userData.isAcconuntVerified && <li>verify email</li>}
+          
           <li class="last">logout</li>
         </ul>
         </div>
