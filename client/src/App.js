@@ -17,7 +17,7 @@ function App() {
       <div className="App">
         <ToastContainer/>
         <Routes>
-          <Route path="/" element={<User/>} />
+          <Route path="/" element={<Home/>} />
           <Route path="/chat" element={<Chat/>} />
           <Route path="/Auth" element={<Auth/>} />
           <Route path="/login" element={<Login/>} />
