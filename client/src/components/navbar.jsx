@@ -12,7 +12,7 @@ const Navbar = () => {
       <div class="custom-div group">
         {userData.name[0].toUpperCase()}
         <div class="custom-tooltip">
-        <ul>
+        <ul class="custom-list">
           <li>verify email</li>
           <li>logout</li>
         </ul>
